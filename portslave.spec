@@ -4,8 +4,6 @@ Name:		portslave
 Version:	1.2.0pre12
 Release:	1
 Group:		Networking/Daemons
-Group(de):	Netzwerkwesen/Server
-Group(pl):	Sieciowe/Serwery
 License:	GPL
 Source0:	%{name}-%{version}.tar.gz
 #Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/portslave/%{name}-%{version}.tar.gz
