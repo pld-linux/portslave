@@ -1,4 +1,5 @@
 Summary:	Portslave - RADIUS client
+Summary(pl):	Portslave - klient RADIUS
 Name:		portslave
 Version:	1.2.0pre12
 Release:	1
@@ -7,8 +8,9 @@ Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 License:	GPL
 Source0:	%{name}-%{version}.tar.gz
+#Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/portslave/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
-URL:		http://www.miquels.cistron.nl/radius/
+URL:		http://sourceforge.net/projects/portslave/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	radius
 
@@ -21,6 +23,12 @@ terminal servers (aka RAS: Remote Auth Servers) for logging in dial in
 modem users. Portslave can 'answer the line' and act as the RADIUS
 client for this as well as other Unix services such as telnet and
 secure shell (ssh).
+
+%description -l pl
+Portslave jest klientem RADIUS-a. RADIUS (Remote Authentication
+Dial-In User Service - serwis autentykacji wdzwaniaj±cych siê
+u¿ytkowników) pozwala na autentykacjê logowania z centralnego serwera
+RADIUS bez potrzeby trzymania kont u¿ytkowników na wielu maszynach.
 
 %prep
 %setup -q
