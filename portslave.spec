@@ -53,4 +53,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README* LICENSE ChangeLog TODO MAINTAINERS
 %attr(755,root,root) %{_sbindir}/*
-%attr(640,root,root) %config %verify(not size mtime md5) %{_sysconfdir}/portslave/*
+%dir %{_sysconfdir}/%{name}
+%attr(640,root,root) %config %verify(not size mtime md5) %{_sysconfdir}/%{name}/*
