@@ -1,4 +1,4 @@
-# $Revision: 1.5 $
+# $Revision: 1.6 $
 Summary:	Portslave - RADIUS client
 Name:		portslave
 Version:	1.2.0pre12
