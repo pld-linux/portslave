@@ -1,4 +1,4 @@
-# $Revision: 1.4 $
+# $Revision: 1.5 $
 Summary:	Portslave - RADIUS client
 Name:		portslave
 Version:	1.2.0pre12
@@ -10,6 +10,7 @@ Source0:	%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://www.miquels.cistron.nl/radius/
 BuildRoot:	/tmp/%{name}-%{version}-root
+Requires:	radius
 
 %description
 Portslave is a RADIUS client. RADIUS (Remote Authentication Dial-In User
