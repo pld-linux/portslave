@@ -1,4 +1,4 @@
-# $Revision: 1.8 $
+# $Revision: 1.9 $
 Summary:	Portslave - RADIUS client
 Name:		portslave
 Version:	1.2.0pre12
@@ -27,7 +27,7 @@ secure shell (ssh).
 %patch -p1
 %build
 cd src
-make
+%{__make}
 cd ..
 
 %install
