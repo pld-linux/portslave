@@ -1,4 +1,4 @@
-# $Revision: 1.1 $
+# $Revision: 1.2 $
 Summary:	Portslave
 Name:		portslave
 Version:	1.2.0pre12
@@ -37,7 +37,7 @@ install src/ctlportslave	$RPM_BUILD_ROOT%{_sbindir}
 gzip -9nf README* LICENSE ChangeLog TODO MAINTAINERS
 
 %post
-/sbin/chkconfig --add portslave
+/sbin/chkconfig --add radinit
 echo "Run \"/etc/rc.d/init.d/radinit start\" to start radinit."
 
 %preun
