@@ -6,6 +6,7 @@ Release:	1
 Group:		Networking/Daemons
 License:	GPL
 Source0:	%{name}-%{version}.tar.gz
+# Source0-md5:	48d013411514bc206607217a7e410c27
 #Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/portslave/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://sourceforge.net/projects/portslave/
