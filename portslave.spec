@@ -10,8 +10,8 @@ Source0:	%{name}-%{version}.tar.gz
 #Source0:	ftp://ftp.sourceforge.net/pub/sourceforge/portslave/%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://sourceforge.net/projects/portslave/
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	radius
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Portslave is a RADIUS client. RADIUS (Remote Authentication Dial-In
@@ -32,10 +32,11 @@ RADIUS bez potrzeby trzymania kont u¿ytkowników na wielu maszynach.
 %prep
 %setup -q
 %patch -p1
+
 %build
-cd src
-%{__make}
-cd ..
+%{__make} -C src \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -Wall -D_GNU_SOURCE -DVERSION=\\\"\$(VERSION)\\\""
 
 %install
 rm -rf $RPM_BUILD_ROOT
