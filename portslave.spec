@@ -44,13 +44,11 @@ install pslave.conf $RPM_BUILD_ROOT%{_sysconfdir}/portslave
 
 install src/{portslave,radinit,ctlportslave} $RPM_BUILD_ROOT%{_sbindir}
 
-gzip -9nf README* LICENSE ChangeLog TODO MAINTAINERS
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc {README*,LICENSE,ChangeLog,TODO,MAINTAINERS}.gz
+%doc README* LICENSE ChangeLog TODO MAINTAINERS
 %attr(755,root,root) %{_sbindir}/*
 %attr(640,root,root) %config %verify(not size mtime md5) %{_sysconfdir}/portslave/*
