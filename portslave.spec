@@ -36,7 +36,7 @@ install -d $RPM_BUILD_ROOT/{etc/{portslave,rc.d/init.d},%{_sbindir}}
 
 install pslave.conf $RPM_BUILD_ROOT%{_sysconfdir}/portslave
 
-install src/{portslave,radinit,ctlportslave $RPM_BUILD_ROOT%{_sbindir}
+install src/{portslave,radinit,ctlportslave} $RPM_BUILD_ROOT%{_sbindir}
 
 gzip -9nf README* LICENSE ChangeLog TODO MAINTAINERS
 
