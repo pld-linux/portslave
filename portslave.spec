@@ -1,9 +1,9 @@
-# $Revision: 1.9 $
 Summary:	Portslave - RADIUS client
 Name:		portslave
 Version:	1.2.0pre12
 Release:	1
 Group:		Networking/Daemons
+Group(de):	Netzwerkwesen/Server
 Group(pl):	Sieciowe/Serwery
 License:	GPL
 Source0:	%{name}-%{version}.tar.gz
