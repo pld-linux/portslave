@@ -1,0 +1,31 @@
+diff -Nur portslave-1.2.0pre12.orig/src/Makefile portslave-1.2.0pre12/src/Makefile
+--- portslave-1.2.0pre12.orig/src/Makefile	Sun Jun 27 09:56:26 1999
++++ portslave-1.2.0pre12/src/Makefile	Tue Nov  9 22:34:18 1999
+@@ -1,5 +1,5 @@
+ CC       = gcc
+-CFLAGS   = -O2 -Wall -D_GNU_SOURCE -fPIC
++CFLAGS   = $(RPM_OPT_FLAGS) -D_GNU_SOURCE -fPIC
+ 
+ LDFLAGS  = # -static
+ OBJS     = tty_copy.o main.o getty.o spawnit.o slip.o ctlp-subs.o
+diff -Nur portslave-1.2.0pre12.orig/src/conf.h portslave-1.2.0pre12/src/conf.h
+--- portslave-1.2.0pre12.orig/src/conf.h	Wed Jul 21 05:46:07 1999
++++ portslave-1.2.0pre12/src/conf.h	Tue Nov  9 22:33:56 1999
+@@ -11,7 +11,7 @@
+ 
+ #define PATH_ROUTE		"/sbin/route"
+ #define PATH_IFCONFIG		"/sbin/ifconfig"
+-#define PATH_ARP		"/usr/sbin/arp"
++#define PATH_ARP		"/sbin/arp"
+ 
+ /* Uncomment and define. Will be run by cltportslave as finger and output. */
+ //#define	UPTIME			"/usr/bin/uptime"
+@@ -22,7 +22,7 @@
+ 
+ /* Uncomment if portslave will be running on Linux 2.2. Effects */
+ /* traffic stats. Non-ppp stats are HIGHLY inaccurate under Linux 2.0 */
+-//#define LINUX22
++#define LINUX22
+ 
+ /* Use enhanced ctlportslave output and logging if utmp is big enough */
+ /* IE libc6 */
