@@ -1,4 +1,4 @@
-# $Revision: 1.6 $
+# $Revision: 1.7 $
 Summary:	Portslave - RADIUS client
 Name:		portslave
 Version:	1.2.0pre12
@@ -9,7 +9,7 @@ Copyright:	GPL
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		%{name}-make.patch
 URL:		http://www.miquels.cistron.nl/radius/
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Requires:	radius
 
 %description
