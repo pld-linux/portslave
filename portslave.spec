@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README* LICENSE ChangeLog TODO MAINTAINERS
 %attr(755,root,root) %{_sbindir}/*
 %dir %{_sysconfdir}/%{name}
-%attr(640,root,root) %config %verify(not size mtime md5) %{_sysconfdir}/%{name}/*
+%attr(640,root,root) %config %verify(not md5 mtime size) %{_sysconfdir}/%{name}/*
