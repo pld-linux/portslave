@@ -31,7 +31,7 @@ RADIUS bez potrzeby trzymania kont u¿ytkowników na wielu maszynach.
 
 %prep
 %setup -q
-%patch -p1
+%patch0 -p1
 
 %build
 %{__make} -C src \
