@@ -1,5 +1,5 @@
 Summary:	Portslave - RADIUS client
-Summary(pl):	Portslave - klient RADIUS
+Summary(pl.UTF-8):   Portslave - klient RADIUS
 Name:		portslave
 Version:	1.2.0pre12
 Release:	1
@@ -23,11 +23,11 @@ modem users. Portslave can 'answer the line' and act as the RADIUS
 client for this as well as other Unix services such as telnet and
 secure shell (ssh).
 
-%description -l pl
+%description -l pl.UTF-8
 Portslave jest klientem RADIUS-a. RADIUS (Remote Authentication
-Dial-In User Service - serwis autentykacji wdzwaniaj±cych siê
-u¿ytkowników) pozwala na autentykacjê logowania z centralnego serwera
-RADIUS bez potrzeby trzymania kont u¿ytkowników na wielu maszynach.
+Dial-In User Service - serwis autentykacji wdzwaniajÄ…cych siÄ™
+uÅ¼ytkownikÃ³w) pozwala na autentykacjÄ™ logowania z centralnego serwera
+RADIUS bez potrzeby trzymania kont uÅ¼ytkownikÃ³w na wielu maszynach.
 
 %prep
 %setup -q
