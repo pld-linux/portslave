@@ -1,5 +1,5 @@
 Summary:	Portslave - RADIUS client
-Summary(pl.UTF-8):   Portslave - klient RADIUS
+Summary(pl.UTF-8):	Portslave - klient RADIUS
 Name:		portslave
 Version:	1.2.0pre12
 Release:	1
